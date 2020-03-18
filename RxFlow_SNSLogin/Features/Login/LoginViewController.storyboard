@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XBs-Dz-Yyk">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="8QT-aT-fZM">
+            <objects>
+                <viewController id="XBs-Dz-Yyk" customClass="LoginViewController" customModule="RxFlow_SNSLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kdb-2R-dv3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Sz-6P-Z4C">
+                                <rect key="frame" x="15" y="226" width="345" height="215.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-4X-dvn">
+                                        <rect key="frame" x="140.5" y="0.0" width="64.5" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nh-Wn-Odx">
+                                        <rect key="frame" x="77.5" y="120.5" width="190" height="40"/>
+                                        <color key="backgroundColor" red="0.32994586229324341" green="0.72372597455978394" blue="0.42347139120101929" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="190" id="2OL-Ty-Cwf"/>
+                                            <constraint firstAttribute="height" constant="40" id="YCy-p3-zFt"/>
+                                        </constraints>
+                                        <state key="normal" title="Naver">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HQ-Ow-rYJ" customClass="UIStackView">
+                                        <rect key="frame" x="77.5" y="175.5" width="190" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="190" id="2L1-nM-Dwk"/>
+                                            <constraint firstAttribute="height" constant="40" id="IF1-Nk-Dg1"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGw-C2-kYb" customClass="KOLoginButton">
+                                        <rect key="frame" x="77.5" y="65.5" width="190" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="190" id="lKR-4r-e1H"/>
+                                            <constraint firstAttribute="height" constant="40" id="w4y-wA-SW6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Cb2-4X-dvn" firstAttribute="top" secondItem="4Sz-6P-Z4C" secondAttribute="top" id="5US-hn-Ojs"/>
+                                    <constraint firstItem="7HQ-Ow-rYJ" firstAttribute="top" secondItem="3Nh-Wn-Odx" secondAttribute="bottom" constant="15" id="5aX-m0-h6F"/>
+                                    <constraint firstAttribute="bottom" secondItem="7HQ-Ow-rYJ" secondAttribute="bottom" id="8xL-cO-xyp"/>
+                                    <constraint firstItem="uGw-C2-kYb" firstAttribute="top" secondItem="Cb2-4X-dvn" secondAttribute="bottom" constant="33" id="AJF-Lp-duf"/>
+                                    <constraint firstItem="3Nh-Wn-Odx" firstAttribute="top" secondItem="uGw-C2-kYb" secondAttribute="bottom" constant="15" id="G2n-dS-HYT"/>
+                                    <constraint firstItem="uGw-C2-kYb" firstAttribute="centerX" secondItem="4Sz-6P-Z4C" secondAttribute="centerX" id="ecp-cr-1Wg"/>
+                                    <constraint firstItem="7HQ-Ow-rYJ" firstAttribute="centerX" secondItem="4Sz-6P-Z4C" secondAttribute="centerX" id="egK-YP-XPj"/>
+                                    <constraint firstItem="3Nh-Wn-Odx" firstAttribute="centerX" secondItem="4Sz-6P-Z4C" secondAttribute="centerX" id="mxY-Iu-yQV"/>
+                                    <constraint firstItem="Cb2-4X-dvn" firstAttribute="centerX" secondItem="4Sz-6P-Z4C" secondAttribute="centerX" id="oUE-lM-4OA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yX0-rz-3BD" firstAttribute="trailing" secondItem="4Sz-6P-Z4C" secondAttribute="trailing" constant="15" id="GzZ-gQ-wDf"/>
+                            <constraint firstItem="4Sz-6P-Z4C" firstAttribute="leading" secondItem="yX0-rz-3BD" secondAttribute="leading" constant="15" id="Hdo-E7-6cW"/>
+                            <constraint firstItem="4Sz-6P-Z4C" firstAttribute="centerY" secondItem="Kdb-2R-dv3" secondAttribute="centerY" id="I22-Db-lkg"/>
+                            <constraint firstItem="4Sz-6P-Z4C" firstAttribute="centerX" secondItem="Kdb-2R-dv3" secondAttribute="centerX" id="y3o-yz-dYO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yX0-rz-3BD"/>
+                    </view>
+                    <connections>
+                        <outlet property="appleLoginButton" destination="7HQ-Ow-rYJ" id="Nqn-1Q-5Ua"/>
+                        <outlet property="kakaoLoginButton" destination="uGw-C2-kYb" id="PUO-Ue-DDN"/>
+                        <outlet property="naverLoginButton" destination="3Nh-Wn-Odx" id="eTk-iH-pzL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15C-1n-nl1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="-118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>

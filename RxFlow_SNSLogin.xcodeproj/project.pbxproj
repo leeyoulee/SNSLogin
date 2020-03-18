@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5791726AC4B7C4520A24D3AE /* Pods_RxFlow_SNSLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C211C4E34DACB83E184795 /* Pods_RxFlow_SNSLogin.framework */; };
+		5E11B32E240C9B8B009A01FD /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E11B32D240C9B8B009A01FD /* KakaoOpenSDK.framework */; };
+		5EC175D423FE0E1500457648 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC175D323FE0E1500457648 /* LoginViewModel.swift */; };
+		5EE218C723F29B1200081F0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE218C623F29B1200081F0F /* AppDelegate.swift */; };
+		5EE218CE23F29B1500081F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE218CD23F29B1500081F0F /* Assets.xcassets */; };
+		5EE218D123F29B1500081F0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE218CF23F29B1500081F0F /* LaunchScreen.storyboard */; };
+		5EE218DB23F2A7FE00081F0F /* ViewModelBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE218DA23F2A7FE00081F0F /* ViewModelBased.swift */; };
+		5EE218DD23F2A85000081F0F /* AppStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE218DC23F2A85000081F0F /* AppStep.swift */; };
+		5EEA903C23F38363007B3D6C /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEA903B23F38363007B3D6C /* LoginViewController.storyboard */; };
+		5EEA903F23F38386007B3D6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA903E23F38386007B3D6C /* LoginViewController.swift */; };
+		5EEA904123F394B1007B3D6C /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA904023F394B1007B3D6C /* AppFlow.swift */; };
+		5EEA904323F394DB007B3D6C /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA904223F394DB007B3D6C /* AppStepper.swift */; };
+		5EEA904623F3B933007B3D6C /* PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA904523F3B933007B3D6C /* PreferencesService.swift */; };
+		5EEA904923F3BCA5007B3D6C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA904823F3BCA5007B3D6C /* UserInfo.swift */; };
+		5EEA904D23F3C119007B3D6C /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA904C23F3C119007B3D6C /* LoginFlow.swift */; };
+		5EEA905023F3C65B007B3D6C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA904F23F3C65B007B3D6C /* MainViewController.swift */; };
+		5EEA905223F3C732007B3D6C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA905123F3C732007B3D6C /* MainViewModel.swift */; };
+		5EEA905723F3F3E8007B3D6C /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEA905623F3F3E8007B3D6C /* MainViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5ECC9A5324062B7D001C70B3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		25C211C4E34DACB83E184795 /* Pods_RxFlow_SNSLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFlow_SNSLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E11B32D240C9B8B009A01FD /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		5E5A092B24074DC800975AAA /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		5E949E3A23FD196100FABF02 /* RxFlow_SNSLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RxFlow_SNSLogin.entitlements; sourceTree = "<group>"; };
+		5EC175D323FE0E1500457648 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5EE218C323F29B1200081F0F /* RxFlow_SNSLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFlow_SNSLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE218C623F29B1200081F0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5EE218CD23F29B1500081F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EE218D023F29B1500081F0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5EE218D223F29B1500081F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EE218DA23F2A7FE00081F0F /* ViewModelBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBased.swift; sourceTree = "<group>"; };
+		5EE218DC23F2A85000081F0F /* AppStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStep.swift; sourceTree = "<group>"; };
+		5EEA903B23F38363007B3D6C /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		5EEA903E23F38386007B3D6C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5EEA904023F394B1007B3D6C /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		5EEA904223F394DB007B3D6C /* AppStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
+		5EEA904523F3B933007B3D6C /* PreferencesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesService.swift; sourceTree = "<group>"; };
+		5EEA904823F3BCA5007B3D6C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		5EEA904C23F3C119007B3D6C /* LoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlow.swift; sourceTree = "<group>"; };
+		5EEA904F23F3C65B007B3D6C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5EEA905123F3C732007B3D6C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		5EEA905623F3F3E8007B3D6C /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		6135003686EF0824426E88F9 /* Pods-RxFlow_SNSLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFlow_SNSLogin.debug.xcconfig"; path = "Target Support Files/Pods-RxFlow_SNSLogin/Pods-RxFlow_SNSLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		AD1EE02B0BAB0FE77562EA7C /* Pods-RxFlow_SNSLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFlow_SNSLogin.release.xcconfig"; path = "Target Support Files/Pods-RxFlow_SNSLogin/Pods-RxFlow_SNSLogin.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EE218C023F29B1200081F0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5791726AC4B7C4520A24D3AE /* Pods_RxFlow_SNSLogin.framework in Frameworks */,
+				5E11B32E240C9B8B009A01FD /* KakaoOpenSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		464124C51F620D578C3CA827 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E11B32D240C9B8B009A01FD /* KakaoOpenSDK.framework */,
+				25C211C4E34DACB83E184795 /* Pods_RxFlow_SNSLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EE218BA23F29B1200081F0F = {
+			isa = PBXGroup;
+			children = (
+				5EE218C523F29B1200081F0F /* RxFlow_SNSLogin */,
+				5EE218C423F29B1200081F0F /* Products */,
+				7504B30EE0D77F58D99DDC7D /* Pods */,
+				464124C51F620D578C3CA827 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5EE218C423F29B1200081F0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EE218C323F29B1200081F0F /* RxFlow_SNSLogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EE218C523F29B1200081F0F /* RxFlow_SNSLogin */ = {
+			isa = PBXGroup;
+			children = (
+				5E949E3A23FD196100FABF02 /* RxFlow_SNSLogin.entitlements */,
+				5E5A092B24074DC800975AAA /* KakaoOpenSDK-Bridging-Header.h */,
+				5EE218D923F2A7E800081F0F /* Protocols */,
+				5EE218D823F29D4500081F0F /* Flows */,
+				5EEA903A23F382CE007B3D6C /* Features */,
+				5EEA904423F3B8F2007B3D6C /* Service */,
+				5EEA904723F3BC73007B3D6C /* Model */,
+				5EE218C623F29B1200081F0F /* AppDelegate.swift */,
+				5EE218CD23F29B1500081F0F /* Assets.xcassets */,
+				5EE218CF23F29B1500081F0F /* LaunchScreen.storyboard */,
+				5EE218D223F29B1500081F0F /* Info.plist */,
+			);
+			path = RxFlow_SNSLogin;
+			sourceTree = "<group>";
+		};
+		5EE218D823F29D4500081F0F /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				5EEA904023F394B1007B3D6C /* AppFlow.swift */,
+				5EE218DC23F2A85000081F0F /* AppStep.swift */,
+				5EEA904223F394DB007B3D6C /* AppStepper.swift */,
+				5EEA904C23F3C119007B3D6C /* LoginFlow.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		5EE218D923F2A7E800081F0F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5EE218DA23F2A7FE00081F0F /* ViewModelBased.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5EEA903A23F382CE007B3D6C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5EEA904E23F3C64B007B3D6C /* Main */,
+				5EEA903D23F3836B007B3D6C /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5EEA903D23F3836B007B3D6C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5EEA903B23F38363007B3D6C /* LoginViewController.storyboard */,
+				5EEA903E23F38386007B3D6C /* LoginViewController.swift */,
+				5EC175D323FE0E1500457648 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5EEA904423F3B8F2007B3D6C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5EEA904523F3B933007B3D6C /* PreferencesService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5EEA904723F3BC73007B3D6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EEA904823F3BCA5007B3D6C /* UserInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5EEA904E23F3C64B007B3D6C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5EEA905623F3F3E8007B3D6C /* MainViewController.storyboard */,
+				5EEA904F23F3C65B007B3D6C /* MainViewController.swift */,
+				5EEA905123F3C732007B3D6C /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7504B30EE0D77F58D99DDC7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6135003686EF0824426E88F9 /* Pods-RxFlow_SNSLogin.debug.xcconfig */,
+				AD1EE02B0BAB0FE77562EA7C /* Pods-RxFlow_SNSLogin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EE218C223F29B1200081F0F /* RxFlow_SNSLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EE218D523F29B1500081F0F /* Build configuration list for PBXNativeTarget "RxFlow_SNSLogin" */;
+			buildPhases = (
+				7C688F80A22C7C6E8E63683E /* [CP] Check Pods Manifest.lock */,
+				5EE218BF23F29B1200081F0F /* Sources */,
+				5EE218C023F29B1200081F0F /* Frameworks */,
+				5EE218C123F29B1200081F0F /* Resources */,
+				97083FA68556894F823C034F /* [CP] Embed Pods Frameworks */,
+				5ECC9A5324062B7D001C70B3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxFlow_SNSLogin;
+			productName = RxFlow_SNSLogin;
+			productReference = 5EE218C323F29B1200081F0F /* RxFlow_SNSLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EE218BB23F29B1200081F0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "이유리";
+				TargetAttributes = {
+					5EE218C223F29B1200081F0F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 5EE218BE23F29B1200081F0F /* Build configuration list for PBXProject "RxFlow_SNSLogin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EE218BA23F29B1200081F0F;
+			productRefGroup = 5EE218C423F29B1200081F0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EE218C223F29B1200081F0F /* RxFlow_SNSLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EE218C123F29B1200081F0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EEA903C23F38363007B3D6C /* LoginViewController.storyboard in Resources */,
+				5EEA905723F3F3E8007B3D6C /* MainViewController.storyboard in Resources */,
+				5EE218D123F29B1500081F0F /* LaunchScreen.storyboard in Resources */,
+				5EE218CE23F29B1500081F0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C688F80A22C7C6E8E63683E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxFlow_SNSLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97083FA68556894F823C034F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxFlow_SNSLogin/Pods-RxFlow_SNSLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxFlow_SNSLogin/Pods-RxFlow_SNSLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxFlow_SNSLogin/Pods-RxFlow_SNSLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EE218BF23F29B1200081F0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EEA904123F394B1007B3D6C /* AppFlow.swift in Sources */,
+				5EE218DD23F2A85000081F0F /* AppStep.swift in Sources */,
+				5EEA905023F3C65B007B3D6C /* MainViewController.swift in Sources */,
+				5EE218DB23F2A7FE00081F0F /* ViewModelBased.swift in Sources */,
+				5EEA905223F3C732007B3D6C /* MainViewModel.swift in Sources */,
+				5EEA904323F394DB007B3D6C /* AppStepper.swift in Sources */,
+				5EEA903F23F38386007B3D6C /* LoginViewController.swift in Sources */,
+				5EC175D423FE0E1500457648 /* LoginViewModel.swift in Sources */,
+				5EEA904623F3B933007B3D6C /* PreferencesService.swift in Sources */,
+				5EEA904923F3BCA5007B3D6C /* UserInfo.swift in Sources */,
+				5EEA904D23F3C119007B3D6C /* LoginFlow.swift in Sources */,
+				5EE218C723F29B1200081F0F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5EE218CF23F29B1500081F0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EE218D023F29B1500081F0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EE218D323F29B1500081F0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5EE218D423F29B1500081F0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EE218D623F29B1500081F0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6135003686EF0824426E88F9 /* Pods-RxFlow_SNSLogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RxFlow_SNSLogin/RxFlow_SNSLogin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BPGXX3JG6H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = RxFlow_SNSLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"KeychainSwift\"",
+					"-framework",
+					"\"Moya\"",
+					"-framework",
+					"\"NaverThirdPartyLogin\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"Reusable\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxFlow\"",
+					"-framework",
+					"\"RxOptional\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"RxSwiftExt\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-force_load",
+					"$(SRCROOT)/KakaoOpenSDK.framework/KakaoOpenSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineone.RxFlowSNSLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5EE218D723F29B1500081F0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD1EE02B0BAB0FE77562EA7C /* Pods-RxFlow_SNSLogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RxFlow_SNSLogin/RxFlow_SNSLogin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BPGXX3JG6H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = RxFlow_SNSLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"KeychainSwift\"",
+					"-framework",
+					"\"Moya\"",
+					"-framework",
+					"\"NaverThirdPartyLogin\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"Reusable\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxFlow\"",
+					"-framework",
+					"\"RxOptional\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"RxSwiftExt\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-force_load",
+					"$(SRCROOT)/KakaoOpenSDK.framework/KakaoOpenSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineone.RxFlowSNSLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EE218BE23F29B1200081F0F /* Build configuration list for PBXProject "RxFlow_SNSLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EE218D323F29B1500081F0F /* Debug */,
+				5EE218D423F29B1500081F0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EE218D523F29B1500081F0F /* Build configuration list for PBXNativeTarget "RxFlow_SNSLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EE218D623F29B1500081F0F /* Debug */,
+				5EE218D723F29B1500081F0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EE218BB23F29B1200081F0F /* Project object */;
+}
